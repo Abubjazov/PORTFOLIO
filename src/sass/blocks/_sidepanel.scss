@@ -8,6 +8,13 @@
     justify-content: space-between;
     align-items: center;
     height: 340px;
+    &__link {
+        &:hover {
+            svg path {
+                fill: $main-color;
+            }
+        }
+    }
     &__divider {
         width: 2px;
         height: 70px;
@@ -25,4 +32,9 @@
             transform: rotate(-90deg) translate(-36%,-261%);
         }
     }
+    // img {
+    //     &:hover {
+    //         filter: drop-shadow(1px 1px 10px $main-color);
+    //     } 
+    // }
 }
