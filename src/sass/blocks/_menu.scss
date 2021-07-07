@@ -1,0 +1,21 @@
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &:hover {
+        span {
+            background: $main-color;
+        }
+    } 
+    span {
+        margin-top: 6px;
+        width: 36px;
+        height: 3px;
+        background: #151812;
+    }
+}
