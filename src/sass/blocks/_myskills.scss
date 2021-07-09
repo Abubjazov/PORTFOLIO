@@ -1,0 +1,30 @@
+.myskills {
+    padding-top: 120px;
+    &__wrapper {
+        margin-top: 85px;
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: minmax(270px, auto);
+        grid-auto-rows: 270px;
+        gap: 13px;
+    }
+    &__icon {
+        height: 60px;
+    }
+    &__item {
+        padding: 30px;
+        border: 1px solid #000;
+    }
+    &__title {
+        margin-top: 20px;
+    }
+    &__desc {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+    }
+}
+
