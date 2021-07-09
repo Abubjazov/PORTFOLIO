@@ -1,0 +1,11 @@
+.myworks {
+    padding-top: 120px;
+    &__wrapper {
+        margin-top: 85px;
+        display: grid;
+        grid-template-columns: repeat(4, 280px);
+        grid-template-rows: repeat(2, 280px);
+        grid-auto-rows: 280px;
+        gap: 5px;
+    }
+}
