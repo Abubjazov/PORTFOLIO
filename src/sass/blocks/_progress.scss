@@ -1,0 +1,44 @@
+.progress {
+    padding-top: 120px;
+    &__wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: 70px;
+        grid-auto-rows: 70px;
+        column-gap: 45px;
+        row-gap: 30px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        margin-top: 8px;
+        margin-left: 14px;
+        position: relative;
+        @include circle;
+                &:before {
+                    left: -14px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+    }
+    &__bar {
+        width: 350px;
+        height: 14px;
+        border-radius: 4px;
+        background: #E8E4DE;
+        &-fill {
+            height: 14px;
+            border-radius: 4px;
+            background: $main-color;
+        }
+    }
+}
