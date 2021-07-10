@@ -664,20 +664,27 @@
 
                         <div class="contacts__input">
                             <label for="name">Ваше имя</label>
-                            <input id="name" name="name" type="text">
+                            <input required id="name" name="name" type="text">
                         </div>
 
                         <div class="contacts__input">
                             <label for="email">Ваша почта</label>
-                            <input id="email" name="email" type="email">
+                            <input required id="email" name="email" type="email">
                         </div>
 
                         <div class="contacts__textarea">
                             <label for="textarea">Ваше сообщение</label>
                             <textarea id="textarea" name="textarea" cols="30" rows="10"></textarea>
                         </div>
-        
-                        <button class="btn contacts__button">Отправить сообщение</button>
+                        
+                        <div class="contacts__triggers">
+                            <button class="btn contacts__button">Отправить сообщение</button>
+
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>                        
         
                     </form>
 
