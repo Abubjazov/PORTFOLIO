@@ -50,6 +50,11 @@
             column-gap: 20px;
         }
     }
+    .resume {
+        &__wrapper {
+            column-gap: 44px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -90,6 +95,23 @@
             line-height: 25px;
         }
     }
+    .resume {
+        padding-top: 50px;
+        .title_fz20 {
+            font-size: 16px;
+        }
+        &__wrapper {
+            padding: 10px 0 0 65px;
+            grid-template-columns: repeat(2,305px);
+        }
+        &__subtitle {
+            font-size: 24px;
+            line-height: 40px;
+        }
+        .divider {
+            margin: 0 auto;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -121,6 +143,13 @@
                 font-size: 12px;
                 line-height: 16px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            margin-top: 15px;
+            grid-template-columns: 474px;
+            row-gap: 15px;
         }
     }
 }
@@ -156,6 +185,7 @@
     .aboutme {
         &__wrapper {
             grid-template: 340px / 1fr;
+            grid-auto-rows: minmax(180px,auto);
             gap: 20px;
         }
         &__photo {
@@ -171,6 +201,11 @@
             &-circle {
                 margin-left: 15px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 1fr;
         }
     }
 }
