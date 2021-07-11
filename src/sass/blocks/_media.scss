@@ -22,6 +22,12 @@
             bottom: 10px;
         }
     }
+    .promo {
+        padding-top: 100px;
+        &_btn {
+            margin-top: 15px;
+        }
+    }
 }
 
 @media (max-width: 1380px) {
