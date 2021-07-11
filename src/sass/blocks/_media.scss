@@ -8,11 +8,55 @@
     .container {
         max-width: 960px;
     }
+    .aboutme {
+        &__wrapper {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+        &__skills {
+            grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+            column-gap: 20px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+    .title {
+        font-size: 28px;
+        &_fz16 {
+            font-size: 14px;
+        }
+        &_fz14 {
+            font-size: 12px;
+        }
+    }
+    .aboutme {
+        padding-top: 50px;
+        &__wrapper {
+            grid-template-columns: 270px 428px;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+        &__skills {
+            margin-top: 15px;
+            grid-template: repeat(2,minmax(115px,auto))/repeat(2,207px);
+            column-gap: 15px;
+        }
+        &__skill {
+            grid-template-columns: 39px minmax(auto,180px);
+            column-gap: 0px;
+        }
+        &__desc {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 25px;
+        }
     }
 }
 
@@ -29,6 +73,22 @@
         &__title {
             line-height: 39px;
             width: 300px;
+        }
+    }
+    .aboutme {
+        &__wrapper {
+            grid-template-columns: 260px 258px;
+            grid-template-rows: minmax(170px,auto);
+        }
+        &__skills {
+            grid-template: repeat(2,minmax(115px,auto))/258px;
+        }
+        &__skill {
+            grid-template-columns: 39px minmax(auto,219px);
+            &__desc {
+                font-size: 12px;
+                line-height: 16px;
+            }
         }
     }
 }
@@ -59,6 +119,21 @@
     .promo {
         &_btn {
             margin-top: 32px;
+        }
+    }
+    .aboutme {
+        &__wrapper {
+            grid-template: 1fr / 1fr;
+            gap: 20px;
+        }
+        &__skills {
+            grid-template: repeat(2,minmax(115px,auto))/300px;
+        }
+        &__skill {
+            grid-template-columns: 50px minmax(auto,250px);
+            &-circle {
+                margin-left: 15px;
+            }
         }
     }
 }

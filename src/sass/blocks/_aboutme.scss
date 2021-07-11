@@ -36,11 +36,11 @@
         grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 260px);
         grid-auto-rows: 1fr;
         column-gap: 50px;
-        row-gap: 20px;
+        row-gap: 12px;
     }
     &__skill {
         display: grid;
-        grid-template-columns: 40px 200px;
+        grid-template-columns: 40px minmax(auto, 200px);
         column-gap: 20px;
         &-circle {
             position: relative;
