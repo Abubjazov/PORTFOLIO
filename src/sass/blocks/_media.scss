@@ -70,6 +70,18 @@
             row-gap: 15px;
         }
     }
+    .myworks {
+        &__wrapper {
+            .vertical {
+                grid-column: unset;
+                grid-row: unset;
+            }
+            .horizontal {
+                grid-column: unset;
+                grid-row: unset;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -147,6 +159,22 @@
     .progress {
         &__wrapper {
             grid-template-columns: repeat(2,352px);
+        }
+    }
+    .myworks {
+        padding-top: 50px;
+        .title_fz20 {
+            font-size: 16px;
+        }
+        &__subtitle {
+            font-size: 24px;
+            line-height: 40px;
+        }
+        &__wrapper {
+            margin-top: 30px;
+        }
+        .divider {
+            margin: 0 auto;
         }
     }
 }
