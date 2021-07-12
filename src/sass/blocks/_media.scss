@@ -161,6 +161,7 @@
         }
     }
     .promo {
+        background: url(../../img/main_bg.jpg) no-repeat 60%/cover;
         &__title {
             line-height: 39px;
             width: 300px;
@@ -228,6 +229,7 @@
         left: 80px;
     }
     .promo {
+        background: url(../../img/main_bg_mini.jpg) center (center/cover) no-repeat;
         &_btn {
             margin-top: 32px;
         }
