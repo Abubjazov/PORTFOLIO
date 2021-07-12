@@ -88,6 +88,19 @@
             justify-content: space-between;
         }
     }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+        &__form {
+            grid-template-columns: repeat(2,250px);
+        }
+        &__triggers {
+            grid-template-columns: 210px 294px;
+            column-gap: 15px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -201,6 +214,34 @@
             margin: 0 auto;
         }
     }
+    .contacts {
+        padding-top: 50px;
+        &__wrapper {
+            grid-template-columns: 270px 428px;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &__form {
+            grid-template-columns: repeat(2,209px);
+            row-gap: 10px;
+        }
+        &__triggers {
+            grid-template-columns: repeat(1, auto);
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__policy {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+        &__button {
+            margin-top: 10px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -253,6 +294,18 @@
     .progress {
         &__wrapper {
             grid-template-columns: repeat(2,262px);
+        }
+    }
+    .contacts {
+        padding-top: 50px;
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
         }
     }
 }
@@ -332,6 +385,32 @@
             padding-right: 0;
             grid-template-columns: repeat(auto-fit, 100%);
             row-gap: 25px;
+        }
+    }
+    .contacts {
+        padding-bottom: 50px;
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &__policy {
+            width: 180px;
+            margin: 0 auto;
+            line-height: 18px;
         }
     }
 }
